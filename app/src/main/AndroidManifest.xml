@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kamstrup_site_specification">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/kamstrup_k_icon"
+        android:label="Site Specification"
+        android:roundIcon="@mipmap/kamstrup_k_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <activity android:name=".Sigin_Firebase.Signin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Sigin_Firebase.Register"/>
+        <activity android:name=".Sigin_Firebase.Profile"
+            android:label=""/>
+
+
+        <activity
+            android:name=".MainActivity"
+            android:label="List of Projects"
+
+            >
+
+        </activity>
+
+        <activity
+            android:name=".MainActivitySite"
+            android:label="List of Sites"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+
+        <activity android:name=".Sites.AddSiteActivity"
+            android:label="Site"/>
+        <activity android:name=".add_project.AddProjectActivity"
+            android:label="Project"
+            />
+        <activity android:name=".Sites.Webservices.PokemonMain"
+            android:label=""/>
+
+
+    </application>
+
+</manifest>

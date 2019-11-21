@@ -1,0 +1,112 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="WhiteRadioButton" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlNormal">@color/KamstrupDarkGrey</item>
+        <item name="colorControlActivated">@color/KamstrupΤeal</item>
+    </style>
+
+
+    <style name="text_Header">
+        <item name="android:textSize">@dimen/header_textsize</item>
+        <item name="android:textColor">@color/KamstrupBlack</item>
+        <item name="android:padding">@dimen/header_padding</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/shape</item>
+    </style>
+
+    <style name="text_SubHeader">
+        <item name="android:textSize">@dimen/textSize_18</item>
+        <item name="android:textColor">@color/KamstrupBlack</item>
+        <item name="android:padding">@dimen/header_padding</item>
+
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/shape</item>
+    </style>
+
+    <style name="text_SubsubHeader">
+        <item name="android:textSize">@dimen/textSize_14</item>
+        <item name="android:textColor">@color/KamstrupBlack</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingTop">@dimen/padding8_textView</item>
+        <item name="android:paddingRight">@dimen/padding8_textView</item>
+        <item name="android:paddingLeft">@dimen/padding5_textView</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="text_comment">
+        <item name="android:textSize">@dimen/textSize_14</item>
+        <item name="android:textColor">@color/KamstrupBlack</item>
+        <item name="android:paddingBottom">@dimen/padding5_textView</item>
+        <item name="android:paddingTop">@dimen/padding8_textView</item>
+        <item name="android:paddingRight">@dimen/padding8_textView</item>
+        <item name="android:paddingLeft">@dimen/padding5_textView</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+
+    <style name="edittext_Header">
+        <item name="android:textSize">@dimen/textSize_12</item>
+        <item name="android:textColor">@color/KamstrupBlack</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="signintextView">
+        <item name="android:textSize">@dimen/textSize_18</item>
+        <item name="android:paddingBottom">@dimen/padding5_textView</item>
+        <item name="android:paddingTop">@dimen/padding8_textView</item>
+        <item name="android:paddingRight">@dimen/padding8_textView</item>
+        <item name="android:paddingLeft">@dimen/padding8_textView</item>
+        <item name="android:textColor">@color/KamstrupBlack</item>
+    </style>
+
+    <style name="sigineditTextView">
+        <item name="android:textSize">@dimen/textSize_14</item>
+        <item name="android:paddingLeft">@dimen/padding8_textView</item>
+        <item name="android:layout_marginTop">@dimen/padding8_textView</item>
+        <item name="android:layout_marginBottom">@dimen/padding5_textView</item>
+    </style>
+
+    <style name="sign_button">
+        <item name="android:textSize">@dimen/textSize_16</item>
+        <item name="android:textColor">@color/KamstrupBlack</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@color/KamstrupLightGrey</item>
+        <item name="android:padding">@dimen/padding8_textView</item>
+        <item name="android:layout_marginTop">@dimen/padding8_textView</item>
+    </style>
+
+    <style name="labelHeader">
+        <item name="android:textColor">@color/KamstrupBlack</item>
+
+    </style>
+
+</resources>

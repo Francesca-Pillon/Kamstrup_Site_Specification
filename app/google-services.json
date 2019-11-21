@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "501789572072",
+    "firebase_url": "https://kamstrupsitespecification.firebaseio.com",
+    "project_id": "kamstrupsitespecification",
+    "storage_bucket": "kamstrupsitespecification.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:501789572072:android:fc8a53360ef246744d025d",
+        "android_client_info": {
+          "package_name": "com.example.kamstrup_site_specification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "501789572072-unvruhpnjcnkjfmdmals5nedr6rf6q4f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kamstrup_site_specification",
+            "certificate_hash": "4653c1bb785da80be9e10833e3f56c8e2e75906d"
+          }
+        },
+        {
+          "client_id": "501789572072-i2vf4lvunno6733qbc9hgvnqeth1fko2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAREShdhWGfFe6oYzHkMCXYqmqPF9XhjO4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "501789572072-i2vf4lvunno6733qbc9hgvnqeth1fko2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

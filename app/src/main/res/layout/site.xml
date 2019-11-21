@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/basic_info"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+    <include layout="@layout/toolbar_kamstrup"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintParentSite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/Basic_info_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/text_SubHeader"
+                android:text="Basic Information"
+                app:layout_constraintBottom_toTopOf="@+id/textAddress"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                app:layout_constraintBottom_toTopOf="@id/enterAddress"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Basic_info_title"
+                style="@style/text_SubsubHeader"/>
+
+            <EditText
+                android:id="@+id/enterAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter address"
+                app:layout_constraintBottom_toTopOf="@id/landownerTitle"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textAddress"
+                style="@style/edittext_Header"/>
+
+            <TextView
+                android:id="@+id/landownerTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Landowner"
+                app:layout_constraintBottom_toTopOf="@id/landownerName"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/enterAddress"
+                style="@style/text_SubsubHeader"
+
+                />
+
+            <EditText
+                android:id="@+id/landownerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                app:layout_constraintBottom_toTopOf="@id/landownerNumber"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/landownerTitle"
+                style="@style/edittext_Header"/>
+
+            <EditText
+                android:id="@+id/landownerNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                app:layout_constraintBottom_toTopOf="@id/siteTypeTheTitle"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/landownerName"
+                style="@style/edittext_Header"
+                android:layout_marginBottom="10dp"
+                />
+
+
+            <TextView
+                android:id="@+id/siteTypeTheTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Site Information"
+                app:layout_constraintBottom_toTopOf="@id/siteTypeTitle"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/landownerNumber"
+                style="@style/text_SubHeader"
+                />
+
+            <TextView
+                android:id="@+id/siteTypeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SiteType"
+                app:layout_constraintBottom_toTopOf="@id/sitetypeRadio"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/siteTypeTheTitle"
+                style="@style/text_SubsubHeader"/>
+
+            <RadioGroup
+                android:id="@+id/sitetypeRadio"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                app:layout_constraintBottom_toTopOf="@id/siteHeightText"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/siteTypeTitle"
+                android:background="@drawable/shape">
+
+                <RadioButton
+                    android:id="@+id/minisite"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Minisite"
+                    android:theme="@style/WhiteRadioButton" />
+
+                <RadioButton
+                    android:id="@+id/midisite"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Midisite"
+                    android:theme="@style/WhiteRadioButton" />
+
+                <RadioButton
+                    android:id="@+id/maxisite"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Maxisite"
+                    android:theme="@style/WhiteRadioButton" />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/siteHeightText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Site Height"
+                app:layout_constraintBottom_toTopOf="@id/siteheight"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sitetypeRadio"
+                style="@style/text_SubsubHeader"/>
+
+            <EditText
+                android:id="@+id/siteheight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter the Height"
+                app:layout_constraintBottom_toTopOf="@+id/marking_pole"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/siteHeightText"
+                style="@style/edittext_Header"/>
+
+            <TextView
+                android:id="@+id/marking_pole"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Position your Marking Pole and take a picture"
+                app:layout_constraintBottom_toTopOf="@+id/takepicture_marking"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/siteheight"
+                style="@style/text_comment"/>
+
+            <Button
+                android:id="@+id/takepicture_marking"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Take Picture"
+                app:layout_constraintBottom_toTopOf="@+id/display_picture"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/marking_pole"
+                style="@style/sign_button" />
+
+            <ImageView
+                android:id="@+id/display_picture"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+
+                app:layout_constraintBottom_toTopOf="@+id/commentText_marking_pole"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/takepicture_marking"
+                android:layout_marginHorizontal="@dimen/padding8_textView"
+                android:layout_marginVertical="@dimen/padding8_textView"
+                android:src="@drawable/antenna"
+                android:background="@color/KamstrupLightLightGrey"
+
+                />
+
+
+            <TextView
+                android:id="@+id/commentText_marking_pole"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add comments to picture"
+                app:layout_constraintBottom_toTopOf="@+id/picture_comments"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/display_picture"
+                style="@style/text_SubsubHeader"/>
+
+            <EditText
+                android:id="@+id/picture_comments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter comments"
+                app:layout_constraintBottom_toTopOf="@+id/pokemongooto"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/commentText_marking_pole"
+                style="@style/edittext_Header"/>
+
+
+
+            <Button
+                android:id="@+id/pokemongooto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Have a break and see a pokemon"
+                app:layout_constraintBottom_toTopOf="@+id/site_save_button"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/picture_comments"
+                style="@style/sign_button"
+                android:textColor="@color/KamstrupRed"/>
+
+
+
+            <Button
+                android:id="@+id/site_save_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/save_button"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pokemongooto"
+                style="@style/sign_button"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</LinearLayout>

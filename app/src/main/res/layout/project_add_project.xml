@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/toolbar_kamstrup"/>
+
+        <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:paddingEnd="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp"
+                android:background="@color/KamstrupWhite"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                <!--<include layout="@layout/toolbar_kamstrup"/>-->
+
+
+                <TextView
+                    style="@style/text_SubHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Project Number"
+
+                    />
+
+                <!-- EditText for project projectName input -->
+                <EditText
+                    android:id="@+id/enterprojectnr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:hint="Enter Project Number"
+                    android:paddingBottom="16dp"
+                    android:textColorHint="@color/KamstrupLightGrey"
+                    style="@style/sigineditTextView"/>
+
+                <TextView
+                    android:id="@+id/customerInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Customer information"
+                    style="@style/text_SubHeader"
+
+                    />
+
+                <EditText
+                    android:id="@+id/customerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name and Lastname"
+                    style="@style/sigineditTextView"
+                    />
+
+                <EditText
+                    android:id="@+id/customerEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email Adress"
+                    style="@style/sigineditTextView" />
+
+                <TextView
+                    android:id="@+id/projectEngineerText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Responsible Project Engineer"
+                    style="@style/text_SubHeader"
+
+                    />
+                <EditText
+                    android:id="@+id/projectEngineer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    style="@style/sigineditTextView"
+                     />
+
+                <TextView
+                    android:id="@+id/meter_points_Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Number of meter points"
+                    style="@style/text_SubHeader"/>
+
+                <EditText
+                    android:id="@+id/meter_points"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:hint="Enter number of meter points"
+                    android:paddingBottom="16dp"
+                    android:layout_marginBottom="10dp"
+                    style="@style/sigineditTextView"/>
+
+
+                <!-- Add button -->
+                <Button
+                    android:id="@+id/saveButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/save_button"
+                    style="@style/sign_button"
+                    />
+            </LinearLayout>
+        </ScrollView>
+</LinearLayout>
+

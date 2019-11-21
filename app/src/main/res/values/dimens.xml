@@ -1,0 +1,23 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!--Paddings-->
+    <dimen name="header_padding">16dp</dimen>
+    <dimen name="padding5_textView">5dp</dimen>
+    <dimen name="padding8_textView">8dp</dimen>
+
+    <!--TextSizes-->
+
+    <dimen name="header_textsize">25sp</dimen>
+    <dimen name="textSize_18">18sp</dimen>
+    <dimen name="textSize_12">12sp</dimen>
+    <dimen name="textSize_14">14sp</dimen>
+    <dimen name="textSize_16">16sp</dimen>
+
+
+    <!--Margins-->
+    <dimen name="margintotal">1dp</dimen>
+
+
+
+</resources>

@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.kamstrup_site_specification.MainActivity"
+    android:id="@+id/project_menu"
+
+
+    >
+
+
+    <item
+        android:id="@+id/sites"
+        android:orderInCategory="100"
+        android:title="Sites"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/antenna"
+
+        />
+
+    <item
+        android:id="@+id/profile_menu_add"
+        android:orderInCategory="100"
+        android:title="Profile"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/sign_out_menu_add"
+        android:orderInCategory="100"
+        android:title="Sign out"
+        app:showAsAction="never" />
+
+
+</menu>

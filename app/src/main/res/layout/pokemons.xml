@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/basic_info"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+    <include layout="@layout/toolbar_kamstrup"></include>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Sites.Webservices.PokemonMain">
+
+        <TextView
+            android:id="@+id/pokemontextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="See a Pokemon"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/editText"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/text_Header"/>
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Pokemon name or number"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintTop_toBottomOf="@id/pokemontextView"
+            style="@style/sigineditTextView"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="updatePokemon"
+            android:text="Find Pokemon"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@id/editText"
+            style="@style/sign_button"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:layout_constraintVertical_bias="0.1"
+            android:src="@drawable/bulbasaur"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
