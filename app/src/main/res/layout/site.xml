@@ -236,23 +236,33 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter comments"
-                app:layout_constraintBottom_toTopOf="@+id/pokemongooto"
+                app:layout_constraintBottom_toTopOf="@+id/goto_quote_button"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/commentText_marking_pole"
                 style="@style/edittext_Header"/>
 
 
-
-            <Button
-                android:id="@+id/pokemongooto"
-                android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/comment_see_quotes"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Have a break and see a pokemon"
-                app:layout_constraintBottom_toTopOf="@+id/site_save_button"
+                android:text="Have a break and see some Donald Trump quotes"
+                app:layout_constraintBottom_toTopOf="@+id/goto_quote_button"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/picture_comments"
+                style="@style/text_comment"/>
+
+            <Button
+                android:id="@+id/goto_quote_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="See Quotes"
+                app:layout_constraintBottom_toTopOf="@+id/site_save_button"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/comment_see_quotes"
                 style="@style/sign_button"
                 android:textColor="@color/KamstrupRed"/>
 
@@ -265,7 +275,7 @@
                 android:text="@string/save_button"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/pokemongooto"
+                app:layout_constraintTop_toBottomOf="@+id/goto_quote_button"
                 style="@style/sign_button"/>
 
 

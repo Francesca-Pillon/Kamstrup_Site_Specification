@@ -46,8 +46,9 @@
         <activity android:name=".add_project.AddProjectActivity"
             android:label="Project"
             />
-        <activity android:name=".Sites.Webservices.PokemonMain"
-            android:label=""/>
+        <activity android:name=".Sites.QuoteWebservice.QuoteDisplay">
+
+        </activity>
 
 
     </application>

@@ -72,7 +72,7 @@
                     android:id="@+id/customerEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Email Adress"
+                    android:hint="Email Address"
                     style="@style/sigineditTextView" />
 
                 <TextView

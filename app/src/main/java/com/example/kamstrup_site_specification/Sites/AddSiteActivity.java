@@ -3,9 +3,7 @@ package com.example.kamstrup_site_specification.Sites;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
@@ -23,9 +21,7 @@ import androidx.lifecycle.ViewModelProviders;
 import com.example.kamstrup_site_specification.R;
 import com.example.kamstrup_site_specification.Sites.Database_site.SiteDatabase;
 import com.example.kamstrup_site_specification.Sites.Database_site.SiteEntry;
-import com.example.kamstrup_site_specification.Sites.Webservices.PokemonMain;
-
-
+import com.example.kamstrup_site_specification.Sites.QuoteWebservice.QuoteDisplay;
 
 
 import java.util.Date;
@@ -138,13 +134,13 @@ public class AddSiteActivity extends AppCompatActivity {
             }
         });
 
-        api_button = (Button)findViewById(R.id.pokemongooto);
+        api_button = (Button)findViewById(R.id.goto_quote_button);
         api_button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Toast.makeText(AddSiteActivity.this, "Crab a cup of coffee while watching a couple of Pokemons", Toast.LENGTH_SHORT).show();
+                Toast.makeText(AddSiteActivity.this, "Grab a cup of coffee and see some quotes", Toast.LENGTH_LONG).show();
                 Context context = getApplicationContext();
-                Class destination = PokemonMain.class;
+                Class destination = QuoteDisplay.class;
 
                 Intent pokemonIntent = new Intent(context,destination);
                 startActivity(pokemonIntent);
